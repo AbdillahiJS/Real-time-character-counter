@@ -11,10 +11,15 @@ textInput.addEventListener('input',(e)=>{
    
    Remaining.innerText = parseInt(Remaining.innerText)-1
    if (parseInt(totalRemain.innerText) === 50 && parseInt(Remaining.innerText)===0) {
-    Remaining.innerText =0 
+    Remaining.innerText =0
     totalRemain.innerText=50
     textInput.maxLength=50
+    textInput.disabled=true
+
 }
+
+
+
 
 })
 
